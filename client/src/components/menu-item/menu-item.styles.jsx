@@ -31,13 +31,18 @@ export const MenuItemContainer = styled.div`
       opacity: 0.9;
     }
   }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+  }
 `;
 
 export const BackgroundImageContainer = styled.div`
-	height: 100%;
   width: 100%;
-  background-position: center;
+  height: 100%;
   background-size: cover;
+  background-position: center;
+  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
 
 export const ContentContainer = styled.div`
@@ -53,7 +58,7 @@ export const ContentContainer = styled.div`
   position: absolute;
 `;
 
-export const TitleContainer = styled.h1`
+export const TitleContainer = styled.span`
 	font-weight: bold;
   margin-bottom: 6px;
   font-size: 22px;

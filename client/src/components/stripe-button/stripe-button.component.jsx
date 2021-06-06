@@ -4,7 +4,6 @@ import axios from 'axios';
 
 import Crown from '../../assets/crown.svg';
 
-import './stripe-button.styles.scss';
 
 const StripeCheckoutButton = ({ price }) => {
 	const priceForStripe = price * 100;

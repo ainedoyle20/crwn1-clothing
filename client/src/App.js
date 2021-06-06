@@ -12,8 +12,7 @@ import ShopPage from './pages/shop/shoppage.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up-page.component';
 import CheckoutPage from './pages/checkout/checkoutpage.component';
 
-import './App.css';
-
+import { GlobalSyle } from './global.styles';
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
@@ -22,6 +21,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
+      <GlobalSyle />
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage}/>
